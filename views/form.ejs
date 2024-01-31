@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dine - Reservation | Discover culinary perfection at Fine Dine! Seamlessly reserve tables for an unparalleled dining experience. Explore diverse cuisines, select the perfect ambiance, and secure your spot effortlessly. Elevate your meals with our intuitive table booking service, ensuring every visit is a delightful and memorable gastronomic journey. Reserve your table now for an unforgettable culinary adventure.</title>
+    <link rel="shortcut icon" href="/public/logo_restaurant.png" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="gridlayout">
+           <div class="headercontent">
+            <div class="headerleft">
+                <img src="/public/logo_restaurant.png" alt="...">
+                <h1>Fine Dine</h1>
+            </div>
+            <div class="headerright">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#abtsection">About</a></li>
+                    <li><a href="/#restaurantsection">Restaurants</a></li>
+                    <li><a href="#footersection">Contact</a></li>
+                </ul>
+                <a href="/form"><button>Book a table</button></a>
+            </div>
+           </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="herobgform">
+                <div class="gridlayout">
+                        <div class="herocontent">
+                            <h1>Dine in Style:<br>Reserve Your Table</h1>
+                            <p>Elevate your dining experience with our seamless table booking. Explore diverse cuisines and reserve your spot effortlessly for a memorable culinary journey. Reserve now for a delightful dining adventure!</p>
+                            <a href="/#restaurantsection"><button>Explore Restaurants</button></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="formsection">
+            <div class="gridlayout">
+                <a href="/details" class="viewdetails">View Details</a>
+                <form action="/api/post" method="post">
+                    <h1>Reserve Here!</h1>
+                    <div class="formcontent">
+                        <div>
+                            <label class="labelName">Guest Name</label><br>
+                            <input type="text" name="guestname" placeholder="Enter guest name"><br>
+                            <label class="labelName">Preferred Restaurant</label><br>
+                            <select class="positioninputtag"  name="restaurantoptions">
+                                <option disabled selected>Select Restaurant</option>
+                                <option>AB Restaurant</option>
+                                <option>The Biriyani Spot</option>
+                                <option>The Chef's Kitchen</option>
+                                <option>Italian Restaurant</option>
+                                <option>The Alien's Cafe</option>
+                                <option>Chinese Restaurant</option>
+                            </select><br>
+                            <label class="labelName">Date</label><br>
+                            <input type="date" name="date">
+                        </div>
+                        <div>
+                            <label class="labelName">Contact Number</label><br>
+                            <input type="tel" name="phoneno" placeholder="Enter your phone number"><br>
+                            <label class="labelName">Guest's Count</label><br>
+                            <input type="number" name="guestcount" placeholder="Number of guests"><br>
+                            <label class="labelName">Time</label><br>
+                            <input type="time" name="time">
+                        </div>
+                        
+                    </div>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footersection">
+        <div class="gridlayout">
+            <div class="footercontent">
+                <div class="footerheading">
+                    <img src="/public/logo_restaurant.png" alt="...">
+                    <h1>Fine Dine</h1>
+                </div>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+               
+                <p>Email: finedine@yahoo.com</p>
+                <p>Call us on: +911234567890</p>
+            </div>
+        </div>
+        <h6>Copyrights 2024 | All rights reserved.</h6>
+    </footer>
+</body>
+</html>

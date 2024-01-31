@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dine | Discover culinary perfection at Fine Dine! Seamlessly reserve tables for an unparalleled dining experience. Explore diverse cuisines, select the perfect ambiance, and secure your spot effortlessly. Elevate your meals with our intuitive table booking service, ensuring every visit is a delightful and memorable gastronomic journey. Reserve your table now for an unforgettable culinary adventure.</title>
+    <link rel="shortcut icon" href="/public/logo_restaurant.png" />
+    <script src="restaurantdetails.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="gridlayout">
+           <div class="headercontent">
+            <div class="headerleft">
+                <img src="/public/logo_restaurant.png" alt="...">
+                <h1>Fine Dine</h1>
+            </div>
+            <div class="headerright">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#abtsection">About</a></li>
+                    <li><a href="#restaurantsection">Restaurants</a></li>
+                    <li><a href="#footersection">Contact</a></li>
+                </ul>
+                <a href="/form"><button>Book a table</button></a>
+            </div>
+           </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="herobg">
+                <div class="gridlayout">
+                        <div class="herocontent">
+                            <h1>Savor Moments,<br> Reserve Your Table Now.</h1>
+                            <p>Indulge in exquisite dining experiences. Effortlessly book tables at your favorite restaurants. Elevate every meal with seamless reservations for memorable moments. Reserve your seat now!</p>
+                            <a href="#restaurantsection"><button>Explore Restaurants</button></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="abtsection">
+            <div class="gridlayout">
+                <div class="abtcontent">
+                    <div class="abtleft">
+                        <h3>About Us</h3>
+                        <h1>Chennai Dining,<br> Reservations Simplified!</h1>
+                        <p>Discover the culinary wonders of Chennai with our table booking website. Explore diverse restaurants, reserve tables effortlessly, and indulge in the city's vibrant dining scene. Elevate your dining experience as you savor the flavors of Chennai. Your journey to delightful meals begins with a simple click. Book now!</p>
+                    </div>
+                    <img src="/public/abtgrid.png" alt="...">
+                </div>
+            </div>
+        </section>
+        <section id="restaurantsection">
+            <div class="gridlayout">
+                <div class="restaurantcontent">
+                    <h3>Restaurants Available</h3>
+                    <h1>Savor diverse flavors, explore delightful dining!</h1>
+                    <div class="restaurantswrapper owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="/public/r1.avif">
+                            <div class="restaurantname">
+                                <h4>The Alien's Cafe</h4>
+                                <p>4.3<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">South Indian, Arabian, Chinese <br><span>Guindy, Chennai</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="/public/r2.avif">
+                            <div class="restaurantname">
+                                <h4>AB Restaurant</h4>
+                                <p>4.2<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">South Indian, Chinese <br><span>Egmore, Chennai</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="/public/r3.avif">
+                            <div class="restaurantname">
+                                <h4>The Biriyani Spot</h4>
+                                <p>4.6<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">South Indian, North Indian, Arabian<br><span>T . Nagar, Chennai</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="/public/r4.avif">
+                            <div class="restaurantname">
+                                <h4>The Chef's Kitchen</h4>
+                                <p>4.2<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">Chinese, North Indian <br><span>Porur, Chennai</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="/public/r5.avif">
+                            <div class="restaurantname">
+                                <h4>Italian Restaurant</h4>
+                                <p>3.9<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">Italian, Chinese <br><span>Anna Nagar, Chennai</span></p>
+                        </div>
+                        <div class="item">
+                            <img src="/public/r6.avif">
+                            <div class="restaurantname">
+                                <h4>Chinese Restaurant</h4>
+                                <p>4.2<span class="fa fa-star checked"></span></p>
+                            </div>
+                            <p class="cuisine">Chinese<br><span>Porur, Chennai</span></p>
+                        </div>
+                       </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer id="footersection">
+        <div class="gridlayout">
+            <div class="footercontent">
+                <div class="footerheading">
+                    <img src="/public/logo_restaurant.png" alt="...">
+                    <h1>Fine Dine</h1>
+                </div>
+             
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+               
+                <p>Email: finedine@yahoo.com</p>
+                <p>Call us on: +911234567890</p>
+            </div>
+        </div>
+        <h6>Copyrights 2024 | All rights reserved.</h6>
+    </footer>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:3,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            }
+            // 1000:{
+            //     items:3,
+            //     nav:false,
+            //     loop:true
+            // }
+        }
+    })
+      </script>
+</body>
+</html>

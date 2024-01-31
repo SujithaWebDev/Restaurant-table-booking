@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dine - Details | Discover culinary perfection at Fine Dine! Seamlessly reserve tables for an unparalleled dining experience. Explore diverse cuisines, select the perfect ambiance, and secure your spot effortlessly. Elevate your meals with our intuitive table booking service, ensuring every visit is a delightful and memorable gastronomic journey. Reserve your table now for an unforgettable culinary adventure.</title>
+    <link rel="shortcut icon" href="/public/logo_restaurant.png" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="detailssection">
+        <div class="gridlayout">
+            <div class="detailstitle">
+                <a href="/">Back</a>
+                <h1>Reserved Details</h1>
+            </div>
+    <table>
+        <tr>
+            <th class="col1">Guest Name</th>
+            <th>Phone Number</th>
+            <th>Restaurant</th>
+            <th>No.of Guest</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+       
+            <% user.map((ff)=>{ %>
+                <tr>
+                    <td><%= ff.guestname %></td>
+                    <td><%= ff.phoneno %></td>
+                    <td><%= ff.restaurantoptions %></td>
+                    <td><%= ff.guestcount %></td>
+                    <td><%= ff.date %></td>
+                    <td><%= ff.time %></td>
+                </tr>
+            <% }) %>
+        
+    </table>
+        </div>
+    </section>
+    <!-- <tbody>
+        <% user.map((ff)=>{ %>
+            <tr><%= ff.guestname %></tr>
+            <tr><%= ff.phoneno %></tr>
+            <tr><%= ff.restaurantoptions %></tr>
+        <% }) %>
+    </tbody> -->
+    
+</body>
+</html>
