@@ -6,7 +6,7 @@ exports.form=(req,res)=>{
 }
 let axios=require('axios')
 exports.details=(req,res)=>{
-    axios.get("http://localhost:4003/api/post").then(function(response){
+    axios.get("http://localhost:10000/api/post").then(function(response){
         console.log(response);
         res.render('details',{user:response.data})
     })
